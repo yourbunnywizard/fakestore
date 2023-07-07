@@ -5,7 +5,6 @@ import * as Yup from 'yup';
 import CustomInput from '@components/common/CustomInput';
 import {useAppDispatch} from '@hooks/redux';
 import {addProduct, editProduct} from '@store/slices/productsSlice';
-import {NavigationProp} from '@react-navigation/native';
 import {NativeStackScreenProps} from '@react-navigation/native-stack';
 import {RootStackParamList} from '@components/RootNavigation';
 import {IProduct} from '@api/products';
@@ -37,7 +36,6 @@ const ProductForm = ({navigation, route}: TProductForm) => {
   const dispatch = useAppDispatch();
 
   const handleSubmitForm = (values: IProduct) => {
-    console.log(values);
     isEditAction ? dispatch(editProduct(values)) : dispatch(addProduct(values));
     navigation.navigate('Home');
   };
