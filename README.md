@@ -1,11 +1,11 @@
-#**Fakestore**
+# **Fakestore**
 
 This is **React Native** test project.
 
 
 ##About project
 
-###Technologies
+### Technologies
 * React Native 
 * Typescript
 * Redux Toolkit [example use hooks -->](https://github.com/yourbunnywizard/fakestore/blob/6982507dbe5e765ba20808ac0b1d4e77ad826293/src/screens/Home.tsx#L15C3-L15C3), [slice example -->](https://github.com/yourbunnywizard/fakestore/blob/master/src/store/slices/productsSlice.ts)
